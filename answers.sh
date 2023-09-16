@@ -57,3 +57,21 @@
  DELETE 
  FROM students
  WHERE Name="Layal"
+
+ --> JOINS 
+
+14.
+ SELECT E.Name as "Empolyee Name", C.Name as "Company Name" , C.Date as "Company date"
+ FROM companies C , employees E
+ WHERE C.Name= E.Company
+
+15.
+ SELECT E.Name as "Employee Name"
+ FROM companies C , employees E
+ WHERE C.Name= E.Company AND C.Date<2000
+
+16.
+ SELECT Company as "Company Name"
+ FROM employees
+ WHERE Role="Graphic Designer"
+  
