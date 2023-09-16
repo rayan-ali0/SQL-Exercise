@@ -74,4 +74,32 @@
  SELECT Company as "Company Name"
  FROM employees
  WHERE Role="Graphic Designer"
-  
+
+ --> Count & Filter
+
+18.
+ SELECT * 
+ FROM students
+ WHERE Points = (
+ SElECT MAX(Points)
+ FROM students 
+ )
+
+19.
+ SELECT AVG(Points) as "Points Average"
+ FROM students 
+
+20.
+ SELECT COUNT(*) as "Number"
+ FROM students
+ WHERE Points=500
+
+21.
+ SELECT Name
+ FROM students
+ WHERE Name LIKE "%s%"
+
+22.
+ SELECT * 
+ FROM students
+ ORDER BY Points DESC 
